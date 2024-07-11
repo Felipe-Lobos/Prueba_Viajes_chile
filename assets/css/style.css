@@ -23,6 +23,12 @@
     color: #EEEEEE;
     background-color: #222831;
   }
+
+  h2, h3 , h1{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
   
   .icon-div{
     background-color: #76ABAE;
@@ -34,4 +40,11 @@
   .footer-icon{
     font-size: 30px;
   }
+
+  #botonto{
+    background-color: #76ABAE;
+  }
+  /* html {
+    scroll-behavior: smooth;
+  } */
   

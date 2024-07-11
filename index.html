@@ -15,11 +15,11 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/script.js"></script>
+
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg border-bottom border-body" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg border-bottom border-body fixed-top" data-bs-theme="dark">
         <div class="container">
             <img src="assets/img/viajes.svg" width="30px" alt="viajes.svg" class="mx-2">
             <a class="navbar-brand " href="#">Viajes Chile</a>
@@ -33,13 +33,13 @@
                         <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Quienes Somos</a>
+                        <a id="about-link" class="nav-link" href="#">Quienes Somos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Destacados</a>
+                        <a id="highlights-link" class="nav-link" href="#">Destacados</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
+                        <a id="contact-link" class="nav-link" href="#">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -73,7 +73,7 @@
             </div>
         </div>
     </header>
-    <section id="about-us" class="container text-center">
+    <section id="about-us" class="container text-center my-4">
         <h2> QUIENES SOMOS?</h2>
         <div class="row">
             <div class="col-12 col-md-4">
@@ -118,10 +118,10 @@
         </div>
         <hr class="border border-1 opacity-25">
     </section>
-    <section id="highlights" class="container text-center">
+    <section id="highlights" class="container text-center my-4">
         <h2>DESTACADOS</h2>
         <div class="row">
-            <div class="col-12 col-sm-6 col-md-3">
+            <div class="col-12 col-sm-6 col-lg-3">
                 <div class="card">
                     <img src="assets/img/card1.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -131,40 +131,43 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-3">
+            <div class="col-12 col-sm-6 col-lg-3">
                 <div class="card">
                     <img src="assets/img/card2.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Laguna Lejia</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea aliquid minima
+                            dicta, quas quisquam blanditiis reiciendis quo provident hic sed, obcaecati neque, quam
+                            quibusdam consectetur earum dolores. At, impedit illum?</p>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-3">
+            <div class="col-12 col-sm-6 col-lg-3">
                 <div class="card">
                     <img src="assets/img/card3.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Laguna Chaxa</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea aliquid minima
+                            dicta, quas quisquam blanditiis reiciendis quo provident hic sed, obcaecati neque, quam
+                            quibusdam consectetur earum dolores. At, impedit illum?</p>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-3">
+            <div class="col-12 col-sm-6 col-lg-3">
                 <div class="card">
                     <img src="assets/img/card4.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Bosque Valdiviano</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea aliquid minima
+                            dicta, quas quisquam blanditiis reiciendis quo provident hic sed, obcaecati neque, quam
+                            quibusdam consectetur earum dolores. At, impedit illum?</p>
                     </div>
                 </div>
             </div>
         </div>
         <hr class="border border-1 opacity-25">
     </section>
-    <section id="contac" class="container">
+    <section id="contact" class="container my-4">
         <h2 class="text-center">CONTACTO</h2>
         <div>
             <div class="mb-3">
@@ -180,30 +183,25 @@
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
         </div>
+        <button type="button" id="botonto" class="btn" data-bs-toggle="tooltip" data-bs-title="Click para Contactarnos">Enviar</button>
     </section>
     <footer>
         <div class="container-fluid text-center p-5">
             <h3>VIAJES CHILE</h3>
             <div class="footer-icon">
                 <i class="fa-brands fa-github"></i>
-            <i class="fa-brands fa-linkedin"></i>
-            <i class="fa-brands fa-square-twitter"></i>
-            <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+                <i class="fa-brands fa-square-facebook"></i>
             </div>
-            
+
         </div>
 
     </footer>
-
-
-
-
-
-
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
